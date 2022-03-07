@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practicas">
         <activity
+            android:name=".Central"
+            android:exported="false"
+            android:label="@string/title_activity_central"
+            android:theme="@style/Theme.Practicas.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
