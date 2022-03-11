@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.practicas.databinding.ActivityMainBinding
-import java.security.Principal
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -83,6 +83,4 @@ class MainActivity : AppCompatActivity() {
         val usuario = auth.currentUser
         actualiza(usuario)
     }
-
-    //COmentario sabloso padre k lo k parce
 }

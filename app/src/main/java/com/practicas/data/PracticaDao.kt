@@ -12,11 +12,11 @@ interface PracticaDao {
     fun getAllData(): LiveData<List<Practica>>
     //Se agrega esto, OJO con addNombre (nombre: Nombre)
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun addEstado(practica: Practica)
+    suspend fun addPractica(practica: Practica)
     //Se agrega esto, OJO con addNombre (nombre: Nombre)
     @Update(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun updateEstado(practica: Practica)
+    suspend fun updatePractica(practica: Practica)
     //Se agrega esto, OJO con addNombre (nombre: Nombre)
     @Delete
-    suspend fun deleteEstado(practica: Practica)
+    suspend fun deletePractica(practica: Practica)
 }

@@ -14,4 +14,19 @@
     <string name="menu_practica">Práctica</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bt_actualizar">Actualizar</string>
+    <string name="menu_delete">Eliminar estado</string>
+    <string name="msg_seguroBorrar">¿Está seguro de eliminar?</string>
+    <string name="no">No</string>
+    <string name="si">Si</string>
+
+    <string name="msg_nombre">Nombre del país</string>
+    <string name="msg_capital">Nombre de la capital</string>
+    <string name="msg_poblacion">Población (Número de personas)</string>
+    <string name="msg_costas">Costas (Si o No tiene costas)</string>
+    <string name="msg_estado_add">Estado Agregado</string>
+    <string name="msg_estado_update">Estado Actualizado</string>
+    <string name="bt_agregar">Agregar</string>
+
 </resources>

@@ -18,16 +18,16 @@ class PracticaViewModel(application: Application) : AndroidViewModel(application
         repository = PracticaRepository(practicaDao)
         getAllData = repository.getAllData
     }
-    fun addEstado (practica: Practica){
-        viewModelScope.launch(Dispatchers.IO) {repository.addEstado(practica) }
+    fun addPractica (practica: Practica){
+        viewModelScope.launch(Dispatchers.IO) {repository.addPractica(practica) }
     }
 
-    fun updateEstado  (practica: Practica){
-        viewModelScope.launch(Dispatchers.IO) {repository.updateEstado(practica) }
+    fun updatePractica  (practica: Practica){
+        viewModelScope.launch(Dispatchers.IO) {repository.updatePractica(practica) }
     }
 
-    fun deleteEstado  (practica: Practica){
-        viewModelScope.launch(Dispatchers.IO) {repository.deleteEstado(practica) }
+    fun deletePractica  (practica: Practica){
+        viewModelScope.launch(Dispatchers.IO) {repository.deletePractica(practica) }
     }
 
 }

@@ -8,13 +8,13 @@ class PracticaRepository(private val practicaDao: PracticaDao) {
 
     val getAllData: LiveData<List<Practica>> = practicaDao.getAllData()
 
-    suspend fun addEstado(practica: Practica){
-        practicaDao.addEstado(practica)
+    suspend fun addPractica(practica: Practica){
+        practicaDao.addPractica(practica)
     }
-    suspend fun updateEstado(practica: Practica){
-        practicaDao.updateEstado(practica)
+    suspend fun updatePractica(practica: Practica){
+        practicaDao.updatePractica(practica)
     }
-    suspend fun deleteEstado(practica: Practica){
-        practicaDao.deleteEstado(practica)
+    suspend fun deletePractica(practica: Practica){
+        practicaDao.deletePractica(practica)
     }
 }

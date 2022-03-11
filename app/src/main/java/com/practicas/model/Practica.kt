@@ -15,9 +15,9 @@ data class Practica(
     @ColumnInfo(name = "nombre")
     val nombre: String,
     @ColumnInfo(name = "capital")
-    val capítal: String,
+    val capital: String?,
     @ColumnInfo(name = "poblacion")
-    val poblacion: Int,
+    val poblacion: String?,
     @ColumnInfo(name = "costas")
-    val Costas: String,
+    val Costas: String?,
 ): Parcelable
