@@ -16,7 +16,7 @@ class PracticaAdapter: RecyclerView.Adapter<PracticaAdapter.PracticaViewHolder>(
         RecyclerView.ViewHolder(itemBindind.root) {
         fun bind(practica: Practica){
             itemBindind.tvCapital.text = practica.capital
-            itemBindind.tvPoblacion.text = practica.poblacion
+            itemBindind.tvPoblacion.text = practica.poblacion.toString() //aqui
             itemBindind.tvCostas.text = practica.Costas
             itemBindind.tvNombre.text = practica.nombre
             itemBindind.vistaFila.setOnClickListener {

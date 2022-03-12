@@ -5,7 +5,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.practicas.model.Practica
 
-@Database(entities = [Practica::class], version=1, exportSchema = false)
+@Database(entities = [Practica::class], version=2, exportSchema = false)
 abstract class PracticaDatabase: RoomDatabase() {
     abstract fun practicaDao() : PracticaDao
 
@@ -22,7 +22,7 @@ abstract class PracticaDatabase: RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     PracticaDatabase::class.java,
-                    "practica_database"
+                    "practica_database2"
                 ).build()
 
                 INSTANCE = instance

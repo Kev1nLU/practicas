@@ -41,7 +41,7 @@ class AddPracticaFragment : Fragment() {
 
         if(nombre.isNotEmpty()){
             val capital = binding.etCapital.text.toString()
-            val poblacion = binding.etPoblacion.text.toString()
+            val poblacion = binding.etPoblacion.text.toString().toDouble()
             val costas = binding.etCostas.text.toString()
 
             val practica = Practica(0,nombre,capital, poblacion, costas)

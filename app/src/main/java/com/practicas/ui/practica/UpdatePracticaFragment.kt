@@ -33,7 +33,7 @@ class UpdatePracticaFragment : Fragment() {
 
         binding.etNombre.setText(args.practica.nombre)
         binding.etCapital.setText(args.practica.capital)
-        binding.etPoblacion.setText(args.practica.poblacion)
+        binding.etPoblacion.setText(args.practica.poblacion.toString())
         binding.etCostas.setText(args.practica.Costas)
 
         binding.btActualizar.setOnClickListener{ updatePractica() }
@@ -48,7 +48,7 @@ class UpdatePracticaFragment : Fragment() {
 
         if (nombre.isNotEmpty()) {
             val capital = binding.etCapital.text.toString()
-            val poblacion = binding.etPoblacion.text.toString()
+            val poblacion = binding.etPoblacion.text.toString().toDouble()
             val costas = binding.etCostas.text.toString()
 
             val practica = Practica(args.practica.id, nombre, capital, poblacion,costas)
